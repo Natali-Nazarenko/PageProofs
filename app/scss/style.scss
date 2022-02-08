@@ -235,13 +235,11 @@ body {
         height: 34px;
         background: transparent;
       }
-      .arrow__left {
+      .page1__leftArrow {
         width: 30px;
         height: 11px;
-        color: #ffffff;
-        box-sizing: border-box;
       }
-      .arrow__right {
+      .page1__rightArrow {
         width: 30px;
         height: 11px;
       }
@@ -278,6 +276,7 @@ body {
       background: #8d9aa5;
     }
   }
+
   .page2__container {
     display: flex;
     justify-content: start;
@@ -326,15 +325,15 @@ body {
         }
         .page2__blockArrow {
           margin-left: 135px;
-          .leftArrow {
+          .page2__button {
             width: 54px;
             height: 54px;
             border: 1px solid #98a4ae;
-          }
-          .rightArrow {
-            width: 54px;
-            height: 54px;
-            border: 1px solid #98a4ae;
+            margin-right: 15px;
+            .page2__leftArrow {
+              width: 30px;
+              height: 11px;
+            }
           }
         }
       }
@@ -364,6 +363,16 @@ body {
         }
       }
     }
+  }
+
+  .page2__slider {
+    position: absolute;
+    top: 725px;
+    left: 974px;
+    width: 949px;
+    height: 245px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

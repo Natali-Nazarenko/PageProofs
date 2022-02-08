@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/dest/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>Ceramica</title>
 </head>
 <body>
+    <div class="wrapper">
     <header>
+        <div class="header__container">
         <div class="logo">
-            <img src='./images/dest/Vector.svg' alt="Logo"/>
-            <div><span>CERAMICA</span></div>
+            <img src='./images/dest/logo.svg' alt="Logo"/>
         </div>
         <button>В МАГАЗИН</button>
         <nav>   
@@ -27,71 +29,91 @@
             <option value="EN">EN</option>
         </select>
         <div class="icons">
-            <img src="./images/dest/loupe.svg" alt="search">
-            <img src="./images/dest/scales.svg" alt="scales">
-            <img src="./images//dest/heart.svg" alt="likes">
-            <div>10</div>
-            <img src="./images//dest/man.svg" alt="contacts">
+            <div><img src="./images/dest/loupe.svg" alt="search"></div>
+            <div><img src="./images/dest/scales.svg" alt="scales"></div>
+            <div class="icons_heart">
+                <img src="./images//dest/heart.svg" alt="likes">
+                <div class="like"><span>10</span></div>
+            </div>
+            <div><img src="./images//dest/man.svg" alt="contacts"></div>
         </div>
+    </div>
     </header>
     <main>
         <section class="page1">
-            <img src="./images/dest/PULPIS.png" alt="project">
+            <div>
+                <img src="./images/dest/PULPIS.png" alt="project">
+                <div class="page1__background"></div>
+            </div>
+            
             <article>
-                <h1><span>КЕРАМИКА</span><span>ДЛЯ ВАШИХ ИДЕЙ</span></h1>
-                <span>Лучшие европейские коллекции</span>
-                <span>керамики и керамогранита</span>
+                <div class="article__h1">
+                    <h4>КЕРАМИКА</br>ДЛЯ ВАШИХ ИДЕЙ</h4>
+                </div>
+                <div class="article__span">
+                    <p>Лучшие европейские коллекции</br>керамики и керамогранита</p>
+                </div>
             </article>
             <div class="iconNetworks">
-                <img src="./images/dest/facebook.svg" alt="">
-                <img src="./images//dest/instagram.svg" alt="">
-                <img src="./images/dest/youtube.svg" alt="">
-                <img src="./images//dest/pinterest.svg" alt="">
+                <div><img src="./images/dest/facebook.svg" alt=""></div>
+                <div><img src="./images//dest/instagram.svg" alt=""></div>
+                <div><img src="./images/dest/youtube.svg" alt=""></div>
+                <div><img src="./images//dest/pinterest.svg" alt=""></div>
             </div>
-            <div class="footerPage1">
-                <ul>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                </ul>
-                    <button></button>
-                <div>
-                    <button></button>
+            <div class="page1__choice">
+                <div class="page1__list">
+                    <div><button></button></div>
+                    <div><button></button></div>
+                    <div><button class="active"></button></div>
+                </div>
+                <div class="page1__button">
+                    <button><div></div></button>
+                </div>
+                <div class="page1__arrows">
+                    <button><img class="arrow__left" src="./images/dest/arrowWhiteLeft.svg" alt=""></button>
                     <div></div>
-                    <button></button>
-            </div>
+                    <button><img class="arrow__right" src="./images/dest/arrowRedRight.svg" alt=""></button>
+                </div>
             </div>
         </section>
         <section class="page2">
             <div class="page2__header">
-                <h5>наши проекты</h5>
-                <div>-----</div>
+                <div class="text">
+                    <p>НАШИ ПРОЕКТЫ</p>
+                    <div class="line"></div>
+                </div>
+                
             </div>
             <div class="page2__container">
-                <div>
-                    <img src="./images//dest/page2_main.png" alt="">
-                    <img src="./images/dest/loupePlus.svg" alt="increase">
+                <div class="page2__container__mainImage">
+                    <img class="page2__mainImage" src="./images/dest/page2_main.png" alt="">
+                    <div class="container__mainImage_loupe"><img src="./images/dest/loupePlus.svg" alt="increase"></div>
+                    
                 </div>
-                <div>
-                    <div>
+                <div class="page2__blockInfo">
+                    <div class="page2__blockButton">
                         <button>СМОТРЕТЬ ВСЕ ПРОЕТКЫ</button>
-                        <div>
-                            <button></button>
-                            <button></button>
+                        <div class="page2__blockArrow">
+                            <button class="leftArrow"></button>
+                            <button class="rightArrow"></button>
                         </div>
                     </div>
                     <article>
-                        <h2>Сеть фитнес-центров Start&Finish</h2>
-                        <p>Создали общий стиль для фасада и внутренней отделки</p>
-                        <p>Еще несколько коротких предложений о том, что было сделано на проекте</p>
+                        <h2>Сеть фитнес-центров</br> Start&Finish</h2>
+                        <div>
+                            <p>Создали общий стиль для фасада и внутренней отделки</p>
+                            <p>Еще несколько коротких предложений о том, что было сделано на проекте</p>
+                        </div>
+                        
                     </article>
                 </div>
+            </div>
                 <div class="page2__slider">
                     <img src="./images//dest/page2-1.png" alt="">
                     <img src="./images//dest/page2-2.png" alt="">
                     <img src="./images//dest/page2-3.png" alt="">
                 </div>
-            </div>
+            
         </section>
         <section class="page3">
             <div class="page3__header">
@@ -219,7 +241,7 @@
                 <input type="email" placeholder="Email">
                 <input type="text" placeholder="*Собщение">
                 <button>ОТПРАВИТЬ</button>
-                <img src="./images/dest/ArrowRight.svg" alt="">
+                <img src="./images/dest/arrowWhightLeft.svg" alt="">
             </form>
             <div></div>
         </section>
@@ -271,7 +293,7 @@
                 <a href="mailto:marketing@ceramica.ua" target="blank">marketing@ceramica.ua</a>
             </div>
             <div>
-                <button>СМОТРЕТЬ КАТАЛОГ <img src="./images/dest/ArrowRight.svg" alt=""></button>
+                <button>СМОТРЕТЬ КАТАЛОГ <img src="./images/dest/arrowWhightLeft.svg" alt=""></button>
                 <button>СКАЧАТЬ КАТАЛОГИ <img src="./images/dest/download.svg" alt=""></button>
             </div>
         </div>
@@ -285,6 +307,6 @@
             <div><span>Разработка и поддержка сайта — </span><a href="https://artjoker.ua/" target="blank">artjoker</a></div>
         </div>
     </footer>
-
+</div>
 </body>
 </html>

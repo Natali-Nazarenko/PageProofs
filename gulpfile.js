@@ -9,6 +9,7 @@ const imagemin = require('gulp-imagemin');
 function browsersync() {
     browserSyncServer.init({
         server: { baseDir: 'app/' },
+        notify: false,
         online: true,
     })
 }
@@ -16,12 +17,12 @@ function browsersync() {
 exports.browsersync = browsersync;
 
 function compileSCSS() {
-    return src('app/scss/*.scss')
+    return src('app/scss/**/*')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoPrefixer({ overrideBrowserslist: ['last 10 version'] }))
-    .pipe(mimifyCSS())
+    .pipe(mimifyCSS( { level: { 1: { specialComments: 0 } } , format: 'beautify' } ))
     .pipe(rename({suffix: '.min'}))
-    .pipe(dest('app/css'))
+    .pipe(dest('app/css/'))
     .pipe(browserSyncServer.stream());
 }
 
@@ -36,8 +37,11 @@ function images() {
 exports.images = images;
 
 function startwatch() {
-	watch('app/scss/*.scss', compileSCSS);
-	watch('app/*.html').on('change', browserSyncServer.reload);
+	watch('app/scss/**/*.scss', compileSCSS);
+    watch('app/*.html').on('change', browserSyncServer.reload);
+    watch('app/images/src/**/*', images);
 }
 
-exports.default = parallel(images, compileSCSS, browsersync, startwatch);
+exports.startwatch = startwatch;
+
+exports.default = parallel(compileSCSS, images, browsersync, startwatch);

@@ -70,15 +70,16 @@
                     <button><div></div></button>
                 </div>
                 <div class="page1__arrows">
-                    <button><img class="arrow__left" src="./images/dest/arrowWhiteLeft.svg" alt=""></button>
+                    <button><img class="page1__leftArrow" src="./images/dest/arrowWhiteLeft.svg" alt=""></button>
                     <div></div>
-                    <button><img class="arrow__right" src="./images/dest/arrowRedRight.svg" alt=""></button>
+                    <button><img class="page1__rightArrow" src="./images/dest/arrowRedRight.svg" alt=""></button>
                 </div>
             </div>
         </section>
+
         <section class="page2">
             <div class="page2__header">
-                <div class="text">
+                <div class="page2__header__text">
                     <p>НАШИ ПРОЕКТЫ</p>
                     <div class="line"></div>
                 </div>
@@ -94,8 +95,8 @@
                     <div class="page2__blockButton">
                         <button>СМОТРЕТЬ ВСЕ ПРОЕТКЫ</button>
                         <div class="page2__blockArrow">
-                            <button class="leftArrow"></button>
-                            <button class="rightArrow"></button>
+                            <button class="page2__button"><img class="page2__leftArrow" src="./images/dest/arrowGrey.svg" alt=""></button>
+                            <button class="page2__button"><img class="page2__rightArrow" src="./images/dest/arrowRedRight.svg" alt=""></button>
                         </div>
                     </div>
                     <article>
@@ -108,31 +109,51 @@
                     </article>
                 </div>
             </div>
-                <div class="page2__slider">
-                    <img src="./images//dest/page2-1.png" alt="">
-                    <img src="./images//dest/page2-2.png" alt="">
-                    <img src="./images//dest/page2-3.png" alt="">
-                </div>
+            <div class="page2__slider">
+                <img src="./images//dest/page2-1.png" alt="">
+                <img src="./images//dest/page2-2.png" alt="">
+                <img src="./images//dest/page2-3.png" alt="">
+            </div>
             
         </section>
+
         <section class="page3">
             <div class="page3__header">
-                <div>
-                    <h5>интересное из блога</h5>
-                    <div>------</div>
+                <div class="page3__header__text">
+                    <p>ИНТЕРЕСНОЕ ИЗ БЛОГА</p>
+                    <div class="line"></div>
                 </div>
-                <button>перейти в блог</button>
+                <button>ПЕРЕЙТИ В БЛОГ</button>
             </div>
             <div class="page3__slider">
-                <div>
-                    <img src="./images/dest/page3-1.png" alt="">
-                    <div class="page3__slider__block1">
-                        <div>
-                            <span>НОВОСТЬ</span>
+                <div class="frame__card">
+                    <div class="card">
+                        <img class="main-image" src="./images/dest/page3-1.png" alt="">
+                        <div class="card__block">
+                            <div class="info">
+                                <span class="news">НОВОСТЬ</span>
+                                <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
+                            </div>
+                            <div class="block__text">Приглашаем посетить выставку Cevisama 2020</div>
+                            <div class="block__footer">
+                                <img src="./images/dest/eye.svg" alt="">
+                                <div>569</div>
+                                <img src="./images/dest/coment.svg" alt="">
+                                <div>21</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame__card">
+                    <div class="card">
+                        <img class="main-image" src="./images/dest/page3-2.png" alt="">
+                        <div class="card__block">
+                        <div class="info">
+                            <span class="article">СТАТЬЯ</span>
                             <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
                         </div>
-                        <div>Приглашаем посетить выставку Cevisama 2020</div>
-                        <div>
+                        <div class="block__text">Как правильно выбирать керамическую плитку</div>
+                        <div class="block__footer">
                             <img src="./images/dest/eye.svg" alt="">
                             <div>569</div>
                             <img src="./images/dest/coment.svg" alt="">
@@ -140,15 +161,17 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/dest/page3-2.png" alt="">
-                    <div class="page3__slider__block2">
-                        <div>
-                            <span>СТАТЬЯ</span>
+                </div>
+                <div class="frame__card">
+                    <div class="card">
+                    <img class="main-image" src="./images/dest/page3-3.png" alt="">
+                    <div class="card__block">
+                        <div class="info">
+                            <span class="article">СТАТЬЯ</span>
                             <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
                         </div>
-                        <div>Как правильно выбирать керамическую плитку</div>
-                        <div>
+                        <div class="block__text">Керамогранит. Виды и применение. Заголовок в две строки, которые не помещаются</div>
+                        <div class="block__footer">
                             <img src="./images/dest/eye.svg" alt="">
                             <div>569</div>
                             <img src="./images/dest/coment.svg" alt="">
@@ -156,51 +179,40 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/dest/page3-3.png" alt="">
-                    <div class="page3__slider__block3">
-                        <div>
-                            <span>СТАТЬЯ</span>
-                            <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
+                </div>
+                <div class="frame__card">
+                    <div class="card">
+                        <img class="main-image" src="./images/dest/page3-4.png" alt="">
+                        <div class="card__block">
+                            <div class="info">
+                                <span class="news">НОВОСТЬ</span>
+                                <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
+                            </div>
+                            <div class="block__text">Приглашаем посетить выставку Cevisama 2020</div>
+                            <div class="block__footer">
+                                <img src="./images/dest/eye.svg" alt="">
+                                <div>569</div>
+                                <img src="./images/dest/coment.svg" alt="">
+                                <div>21</div>
                         </div>
-                        <div>Керамогранит. Виды и применение. Заголовок в две строки, которые не помещаются</div>
-                        <div>
-                            <img src="./images/dest/eye.svg" alt="">
-                            <div>569</div>
-                            <img src="./images/dest/coment.svg" alt="">
-                            <div>21</div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/dest/page3-4.png" alt="">
-                    <div class="page3__slider__block4">
-                        <div>
-                            <span>НОВОСТЬ</span>
-                            <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
-                        </div>
-                        <div>Приглашаем посетить выставку Cevisama 2020</div>
-                        <div>
-                            <img src="./images/dest/eye.svg" alt="">
-                            <div>569</div>
-                            <img src="./images/dest/coment.svg" alt="">
-                            <div>21</div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="./images/dest/page3-5.png" alt="">
-                    <div class="page3__slider__block5">
-                        <div>
-                            <span>СТАТЬЯ</span>
-                            <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
-                        </div>
-                        <div>Как правильно выбирать керамическую плитку</div>
-                        <div>
-                            <img src="./images/dest/eye.svg" alt="">
-                            <div>569</div>
-                            <img src="./images/dest/coment.svg" alt="">
-                            <div>21</div>
+                <div class="frame__card">
+                    <div class="card">
+                        <img class="main-image last" src="./images/dest/page3-5.png" alt="">
+                        <div class="card__block">
+                            <div class="info">
+                                <span class="article">СТАТЬЯ</span>
+                                <time datetime="2020-04-10">10 АПРЕЛЯ 2020</time>
+                            </div>
+                            <div class="block__text">Как правильно выбирать керамическую плитку</div>
+                            <div class="block__footer">
+                                <img src="./images/dest/eye.svg" alt="">
+                                <div>569</div>
+                                <img src="./images/dest/coment.svg" alt="">
+                                <div>21</div>
+                            </div>
                         </div>
                     </div>
                 </div>

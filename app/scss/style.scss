@@ -18,6 +18,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy/Gilroy-Light.eot?iefix") format("eot"),
+    url("../fonts/Gilroy/Gilroy-Light.woff") format("woff"),
+    url("../fonts/Gilroy/Gilroy-Light.ttf") format("truetype"),
+    url("../fonts/Gilroy/Gilroy-Light.svg#webfont") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "GothamPro", Courier, monospace;
 }
@@ -699,6 +711,187 @@ body {
       border: 1px solid #cfdae3;
       transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
       z-index: 10;
+    }
+  }
+}
+
+footer {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  background: #6a737a;
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 225px 0;
+    color: #fff;
+    .telefone {
+      font-size: 14px;
+      line-height: 120%;
+    }
+    .main__logo {
+      .logo__iconNetworks {
+        width: 132px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .iconNetworks__youtube {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .main__infoLinks {
+      width: 868px;
+      height: 223px;
+      margin-left: 120px;
+      margin-right: 89px;
+      display: flex;
+      justify-content: space-between;
+      .telefone {
+        font-size: 14px;
+        line-height: 120%;
+      }
+      .company-info {
+        width: 172px;
+        height: 219px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+          width: 172px;
+          height: 25px;
+          margin-bottom: 15px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 140%;
+        }
+        a {
+          text-decoration: none;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 120%;
+          color: #fff;
+          margin-bottom: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .brands {
+        width: 181px;
+        height: 84px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .brands__title {
+          margin-bottom: 15px;
+          font-size: 18px;
+          line-height: 140%;
+        }
+        span {
+          width: 150px;
+          margin-bottom: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 120%;
+        }
+      }
+      .hr-department {
+        width: 209px;
+        height: 223px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .first-department {
+          span {
+            font-size: 18px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    height: 37px;
+    margin: 0 225px;
+    display: flex;
+    justify-content: space-between;
+    .footer__copyright {
+      width: 143px;
+      height: 17px;
+      font-size: 14px;
+      line-height: 120%;
+      color: #fff;
+    }
+    .footer__buttons {
+      width: 99px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .buttons__line {
+        width: 1px;
+        height: 10px;
+        margin-top: 3px;
+        background-color: #fff;
+      }
+      .ua,
+      .en {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 121.2%;
+        letter-spacing: 0.05em;
+        opacity: 0.4;
+        background: none;
+      }
+      .ru {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 121.2%;
+        letter-spacing: 0.05em;
+        background: none;
+        color: #fff;
+      }
+    }
+    .footer__text {
+      width: 247px;
+      height: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        width: 192px;
+        height: 16px;
+        font-family: Gilroy;
+        font-size: 11.9px;
+        line-height: 133%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        color: #ffffff;
+        mix-blend-mode: normal;
+      }
+      a {
+        width: 51px;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+      }
     }
   }
 }

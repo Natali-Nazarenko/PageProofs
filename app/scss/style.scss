@@ -518,6 +518,76 @@ body {
 
 .page4 {
   height: 924px;
+  background: rgba(207, 218, 227, 0.2);
+  .page4__header {
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      width: 410px;
+      height: 24px;
+      margin: 0 24px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 121.2%;
+      letter-spacing: 0.1em;
+      color: #40474e;
+    }
+    div {
+      width: 200px;
+      height: 1px;
+      background: #8d9aa5;
+    }
+  }
+  .page4__main {
+    display: flex;
+    justify-content: center;
+    .page4__works {
+      width: 900px;
+      height: 600px;
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      .works__info {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+          width: 131px;
+          height: 29px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 120%;
+          text-align: center;
+          text-decoration: none;
+          color: #40474e;
+          margin-bottom: 18px;
+          margin-top: 15px;
+        }
+        button {
+          width: 178px;
+          height: 44px;
+          background: #6b97bb;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 115.7%;
+          text-align: center;
+          color: #f9f9fa;
+        }
+      }
+    }
+  }
 }
 
 .page5 {

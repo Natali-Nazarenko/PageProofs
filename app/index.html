@@ -15,14 +15,16 @@
         <div class="logo">
             <img src='./images/dest/logo.svg' alt="Logo"/>
         </div>
-        <button>В МАГАЗИН</button>
-        <nav>   
+        <div class="navigate">
+            <button><span>в магазин</span></button>
+            <nav>   
             <a href="$$">КАТАЛОГ</a>
             <a href="$$">ИНФОРМАЦИЯ</a>
             <a href="$$">ПАРТНЕРАМ</a>
             <a href="$$"><span>3D</span>-ВИЗУАЛИЗАЦИЯ</a>
             <a href="$$">КОНТАКТЫ</a>
-        </nav>
+            </nav>
+        </div>
         <select>
             <option value="RU">RU</option>
             <option value="UKR">UKR</option>
@@ -32,12 +34,13 @@
             <div><img src="./images/dest/loupe.svg" alt="search"></div>
             <div><img src="./images/dest/scales.svg" alt="scales"></div>
             <div class="icons_heart">
-                <img src="./images//dest/heart.svg" alt="likes">
-                <div class="like"><span>10</span></div>
+                <img src="./images/dest/heart.svg" alt="likes">
+                <div class="like"><span class="like__number">10</span></div>
             </div>
-            <div><img src="./images//dest/man.svg" alt="contacts"></div>
+            <div class="icons_man"><img src="./images/dest/man.svg" alt="contacts"></div>
         </div>
     </div>
+    <div class="header-line"></div>
     </header>
     <main>
         <section class="page1">
@@ -47,8 +50,8 @@
             </div>
             
             <article>
-                <div class="article__h1">
-                    <h4>КЕРАМИКА</br>ДЛЯ ВАШИХ ИДЕЙ</h4>
+                <div>
+                    <h4>керамика</br>ДЛЯ ВАШИХ ИДЕЙ</h4>
                 </div>
                 <div class="article__span">
                     <p>Лучшие европейские коллекции</br>керамики и керамогранита</p>
@@ -301,18 +304,21 @@
                         <span>Торговый дом</span>
                         <a href="mailto:sales@ceramica.ua" target="blank">sales@ceramica.ua</a></div>
                 </div>
-                <div class="administrstion">
-                <span>Администрация</span>
-                <a href="mailto:office@ceramica.ua" target="blank">office@ceramica.ua</a>
-                <div class="telefone">+38 (096) 897-82-65</div>
-                <div class="telefone">+38 (056) 547-32-33</div>
-                <span>Отдел маркетинга</span>
-                <a href="mailto:marketing@ceramica.ua" target="blank">marketing@ceramica.ua</a>
+                <div class="admin-department">
+                    <div class="administration">
+                        <span>Администрация</span>
+                        <a href="mailto:office@ceramica.ua" target="blank">office@ceramica.ua</a>
+                        <div class="telefone">+38 (096) 897-82-65</div>
+                        <div class="telefone">+38 (056) 547-32-33</div></div>
+                    <div class="management">
+                        <span>Отдел маркетинга</span>
+                        <a href="mailto:marketing@ceramica.ua" target="blank">marketing@ceramica.ua</a>
+                    </div>
                 </div>
             </div>
             <div class="main__button">
-                <button>СМОТРЕТЬ КАТАЛОГ <img src="./images/dest/arrowWhightLeft.svg" alt=""></button>
-                <button>СКАЧАТЬ КАТАЛОГИ <img src="./images/dest/download.svg" alt=""></button>
+                <button class="view-catalog">СМОТРЕТЬ КАТАЛОГ <img src="./images/dest/arrowWhightLeft.svg" alt=""></button>
+                <button class="download-catalogs">СКАЧАТЬ КАТАЛОГИ <img src="./images/dest/download.svg" alt=""></button>
             </div>
         </div>
         <div class="footer">

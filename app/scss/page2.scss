@@ -6,32 +6,25 @@
   background: #fff;
   padding-bottom: 117px;
   .page2__header {
-    // height: 224px;
     @include adaptive("height", 224, 56);
 
     .page2__header__text {
-      // width: 426px;
-      // margin-left: 223px;
       @include adaptive("width", 426, 256);
       @include adaptive("margin-left", 223, 56);
-      // padding-top: 119px;
       @include adaptive("padding-top", 119, 26);
       display: flex;
       justify-content: space-between;
       align-items: center;
       p {
-        // width: 203px;
         height: 24px;
         font-style: normal;
         font-weight: normal;
-        // font-size: 20px;
         @include adaptive("font-size", 20, 12);
         line-height: 121.2%;
         letter-spacing: 0.1em;
         color: #40474e;
       }
       .line {
-        // width: 200px;
         @include adaptive("width", 200, 100);
         height: 1px;
         background: #8d9aa5;
@@ -46,21 +39,15 @@
     .page2__container__mainImage {
       position: relative;
       .page2__mainImage {
-        // width: 1070px;
         @include adaptive("width", 1070, 320);
-        // height: 806px;
         @include adaptive("height", 806, 200);
       }
       .container__mainImage_loupe {
         position: absolute;
-        width: 119px;
-        height: 119px;
         @include adaptive("width", 119, 60);
         @include adaptive("height", 119, 60);
-        // left: 187px;
         @include adaptive("left", 187, 30);
         @include adaptive("top", 475, 130);
-        // top: 475px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,22 +63,15 @@
     }
 
     .page2__blockInfo {
-      // width: 563px;
-      // height: 283px;
       @include adaptive("width", 563, 250);
       @include adaptive("height", 283, 20);
-
-      // margin-left: 84px;
       @include adaptive("margin-left", 84, 15);
       .page2__blockButton {
         display: flex;
         justify-content: start;
         button {
-          // width: 284px;
-          // height: 54px;
           @include adaptive("width", 284, 80);
           @include adaptive("height", 54, 20);
-
           border: 1px solid #6b97bb;
           @extend %font-button;
           text-align: center;
@@ -99,14 +79,10 @@
           color: #6b97bb;
         }
         .page2__blockArrow {
-          // margin-left: 134px;
           @include adaptive("margin-left", 134, 10);
           .page2__button {
-            // width: 54px;
-            // height: 54px;
             @include adaptive("width", 54, 27);
             @include adaptive("height", 54, 20);
-
             border: 1px solid #98a4ae;
             margin-right: 11px;
             .page2__leftArrow {
@@ -121,28 +97,22 @@
         }
       }
       article {
-        // margin-top: 81px;
         @include adaptive("margin-top", 81, 15);
         h2 {
           font-style: normal;
           font-weight: normal;
-          // font-size: 44px;
           @include adaptive("font-size", 44, 12);
           line-height: 130%;
           color: #40474e;
         }
         .page2__text {
-          // width: 470px;
           @include adaptive("width", 465, 120);
-          // margin-top: 44px;
           @include adaptive("margin-top", 44, 10);
           display: flex;
           flex-direction: column;
-          // justify-content: space-between;
           p {
             font-style: normal;
             font-weight: 300;
-            // font-size: 17.9px;
             @include adaptive("font-size", 17.9, 8);
             line-height: 140%;
             color: #40474e;
@@ -157,14 +127,10 @@
 
   .page2__slider {
     position: absolute;
-    // top: 725px;
     @include adaptive("top", 725, 240);
     right: 0;
-    // width: 949px;
     @include adaptive("width", 949, 220);
     @include adaptive("height", 245, 30);
-
-    // height: 245px;
     display: flex;
     justify-content: space-between;
   }

@@ -11,10 +11,8 @@ header {
     align-items: center;
     background-color: #e5e5e5;
     .logo {
-      // margin-left: 225px;
       @include adaptive("margin-left", 225, 10);
       img {
-        // width: 96px;
         @include adaptive("width", 96, 56);
       }
     }
@@ -24,12 +22,8 @@ header {
       align-items: center;
     }
     button {
-      // width: 158px;
       @include adaptive("width", 158, 45);
-      // height: 40px;
       @include adaptive("height", 40, 25);
-
-      // margin: 0 75px;
       @include adaptive("margin-left", 75, 15);
       @include adaptive("margin-right", 75, 15);
       border: 1px solid #aa182c;
@@ -42,14 +36,12 @@ header {
       }
     }
     .nav-links {
-      // width: 743px;
       @include adaptive("width", 743, 246);
       display: flex;
       justify-content: space-between;
     }
     a {
       height: 19px;
-      // font-size: 16px;
       @include adaptive("font-size", 16, 8);
       line-height: 100%;
       text-decoration: none;
@@ -65,14 +57,11 @@ header {
       width: 38px;
       height: 22px;
       font-family: "GothamPro", Courier, monospace;
-      // font-size: 15.3px;
       @include adaptive("font-size", 15.3, 10);
       line-height: 140%;
-      // margin: 0 71px 2px 41px;
       margin-bottom: 2px;
       @include adaptive("margin-left", 41, 30);
       @include adaptive("margin-right", 71, 10);
-
       border: none;
       background-color: rgba($color: #fff, $alpha: 0);
       color: #40474e;
@@ -87,7 +76,6 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // width: 174px;
       @include adaptive("width", 174, 100);
       img {
         @include adaptive("width", 23, 15);
@@ -108,9 +96,7 @@ header {
           transform: rotate(15deg);
           .like__number {
             font-weight: bold;
-            // font-size: 7.5px;
             @include adaptive("font-size", 7.5, 5);
-
             transform: rotate(-15deg);
           }
         }

@@ -1,7 +1,6 @@
 @import "./constants.scss";
 
 footer {
-  // height: 420px;
   @include adaptive("height", 420, 350);
   display: flex;
   flex-direction: column;
@@ -12,19 +11,13 @@ footer {
   .main {
     display: flex;
     justify-content: space-between;
-    // margin: 80px 225px 0;
     @include adaptive("margin-top", 80, 10);
     @include adaptive("margin-left", 225, 10);
     @include adaptive-mini("margin-right", 225, 10);
     color: #fff;
     position: relative;
-    // .telefone {
-    //   font-size: 14px;
-    //   line-height: 120%;
-    // }
     .main__logo {
       .logo__iconNetworks {
-        width: 132px;
         @include adaptive("width", 132, 80);
         height: 24px;
         display: flex;
@@ -42,18 +35,13 @@ footer {
       }
     }
     .main__infoLinks {
-      width: 868px;
       @include adaptive("width", 868, 100);
       height: 223px;
-      // @include adaptive("width", 223, 400);
-      // margin-left: 119px;
-      // margin-right: 89px;
       @include adaptive("margin-left", 119, 5);
       @include adaptive("margin-right", 89, 30);
       display: flex;
       .telefone {
         margin-bottom: 10px;
-        // font-size: 14px;
         @include adaptive("font-size", 14, 6);
         line-height: 120%;
       }
@@ -69,11 +57,8 @@ footer {
           width: 172px;
           height: 25px;
           @extend %span-footer;
-          // margin-bottom: 14.3px;
           font-style: normal;
           font-weight: normal;
-          // font-size: 18px;
-          // line-height: 140%;
         }
         .company-info__list {
           display: flex;
@@ -84,10 +69,6 @@ footer {
         a {
           text-decoration: none;
           @extend %font-link;
-          // font-style: normal;
-          // font-weight: normal;
-          // font-size: 14px;
-          // line-height: 120%;
           color: #fff;
           margin-bottom: 10px;
           &:hover {
@@ -96,19 +77,14 @@ footer {
         }
       }
       .brands {
-        width: 117px;
         @include adaptive("width", 117, 50);
         height: 84px;
-        margin-left: 28px;
         @include adaptive("margin-left", 28, 5);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         .brands__title {
           @extend %span-footer;
-          // margin-bottom: 14.3px;
-          // font-size: 18px;
-          // line-height: 140%;
         }
         .brands__list {
           display: flex;
@@ -120,18 +96,11 @@ footer {
           width: 150px;
           margin-bottom: 9px;
           @extend %font-link;
-          // font-style: normal;
-          // font-weight: normal;
-          // font-size: 14px;
-          // line-height: 120%;
         }
       }
       .hr-department {
-        width: 209px;
         @include adaptive("width", 209, 50);
-        height: 223px;
         @include adaptive("height", 223, 160);
-        margin-left: 83px;
         @include adaptive("margin-left", 83, 5);
         display: flex;
         flex-direction: column;
@@ -139,10 +108,6 @@ footer {
         a {
           text-decoration: none;
           @extend %font-link;
-          // font-style: normal;
-          // font-weight: normal;
-          // font-size: 14px;
-          // line-height: 120%;
           color: #fff;
           &:hover {
             text-decoration: underline;
@@ -160,9 +125,6 @@ footer {
           }
           span {
             @extend %span-footer;
-            // margin-bottom: 14.3px;
-            // font-size: 18px;
-            // line-height: 140%;
             letter-spacing: 0.2px;
           }
           a {
@@ -175,19 +137,13 @@ footer {
           flex-direction: column;
           span {
             @extend %span-footer;
-            // margin-bottom: 14.3px;
-            // font-size: 18px;
-            // line-height: 140%;
             letter-spacing: 0.2px;
           }
         }
       }
       .admin-department {
-        // width: 209px;
         @include adaptive("width", 209, 70);
-        height: 223px;
-        @include adaptive("height", 209, 160);
-        margin-left: 51px;
+        @include adaptive("height", 223, 160);
         @include adaptive("margin-left", 51, 10);
         display: flex;
         flex-direction: column;
@@ -197,10 +153,6 @@ footer {
           margin-bottom: 10px;
           text-decoration: none;
           @extend %font-link;
-          // font-style: normal;
-          // font-weight: normal;
-          // font-size: 14px;
-          // line-height: 120%;
           color: #fff;
           &:hover {
             text-decoration: underline;
@@ -217,9 +169,6 @@ footer {
           }
           span {
             @extend %span-footer;
-            // margin-bottom: 14.3px;
-            // font-size: 18px;
-            // line-height: 140%;
           }
         }
         .management {
@@ -231,9 +180,6 @@ footer {
           }
           span {
             @extend %span-footer;
-            // margin-bottom: 14.3px;
-            // font-size: 18px;
-            // line-height: 140%;
             letter-spacing: 0.2px;
             margin-left: -1px;
           }
@@ -242,14 +188,11 @@ footer {
     }
     .main__button {
       button {
-        // width: 262px;
-        // height: 54px;
         @include adaptive("width", 262, 80);
         @include adaptive("height", 54, 34);
         font-family: "GothamPro", Courier, monospace;
         font-style: normal;
         font-weight: normal;
-        // font-size: 14px;
         @include adaptive("font-size", 14, 6);
         line-height: 121.2%;
         letter-spacing: 0.05em;
@@ -288,7 +231,6 @@ footer {
   }
   .footer {
     height: 38px;
-    // margin: 0 225px;
     @include adaptive("margin-left", 225, 20);
     @include adaptive("margin-right", 225, 20);
     display: flex;

@@ -1,0 +1,98 @@
+@import "./constants.scss";
+
+.page4 {
+  max-height: 924px;
+  @include adaptive("padding-bottom", 117, 30);
+  background: rgba(207, 218, 227, 0.2);
+  .page4__header {
+    @include adaptive("height", 224, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header__text {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .title {
+        height: 24px;
+        margin: 0 24px;
+        font-style: normal;
+        font-weight: normal;
+        @include adaptive("font-size", 20, 10);
+        line-height: 121.2%;
+        letter-spacing: 0.1em;
+        color: #40474e;
+      }
+      .line {
+        @include adaptive("width", 200, 40);
+        height: 1px;
+        background: #8d9aa5;
+      }
+    }
+  }
+  .page4__main {
+    margin-left: 19px;
+    display: flex;
+    justify-content: center;
+    .page4__works {
+      @include adaptive("width", 900, 300);
+      @include adaptive("height", 600, 200);
+      display: flex;
+      flex-wrap: wrap;
+      .page4__img {
+        @include adaptive("width", 280, 90);
+        @include adaptive("height", 280, 90);
+        @include adaptive("margin-right", 20, 5);
+        @include adaptive("margin-bottom", 18, 5);
+      }
+      .works__info {
+        @include adaptive("width", 280, 90);
+        @include adaptive("height", 280, 90);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-top: 15px;
+          @include adaptive("width", 50, 20);
+          margin-left: 3px;
+        }
+        a {
+          margin-left: 5px;
+          font-style: normal;
+          font-weight: normal;
+          @include adaptive("font-size", 24, 14);
+          line-height: 120%;
+          text-align: center;
+          text-decoration: none;
+          color: #40474e;
+          @include adaptive("margin-bottom", 18, 10);
+          margin-top: 15px;
+        }
+        button {
+          @include adaptive("width", 178, 55);
+          @include adaptive("height", 44, 18);
+          margin-top: 1px;
+          margin-left: 3px;
+          background: #6b97bb;
+          font-family: "GothamPro", Courier, monospace;
+          font-style: normal;
+          font-weight: normal;
+          @include adaptive("font-size", 14, 8);
+          line-height: 115.7%;
+          text-align: center;
+          color: #f9f9fa;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .page4__header .header__text .line {
+    display: none;
+  }
+}

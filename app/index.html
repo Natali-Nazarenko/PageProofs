@@ -13,26 +13,27 @@
     <header>
         <div class="header__container">
         <div class="logo">
-            <img src='./images/dest/logo.svg' alt="Logo"/>
+            <img src="./images/dest/logo.svg" alt="">
         </div>
         <div class="navigate">
             <button><span>в магазин</span></button>
-            <nav>   
-            <a href="$$">КАТАЛОГ</a>
-            <a href="$$">ИНФОРМАЦИЯ</a>
-            <a href="$$">ПАРТНЕРАМ</a>
-            <a href="$$"><span>3D</span>-ВИЗУАЛИЗАЦИЯ</a>
-            <a href="$$">КОНТАКТЫ</a>
+            <nav class="nav-links">   
+            <a class="nav-link" href="$$">КАТАЛОГ</a>
+            <a class="nav-link" href="$$">ИНФОРМАЦИЯ</a>
+            <a class="nav-link" href="$$">ПАРТНЕРАМ</a>
+            <a class="nav-link" href="$$"><span>3D</span>-ВИЗУАЛИЗАЦИЯ</a>
+            <a class="nav-link" href="$$">КОНТАКТЫ</a>
             </nav>
         </div>
-        <select>
+
+        <select class="select">
             <option value="RU">RU</option>
             <option value="UKR">UKR</option>
             <option value="EN">EN</option>
         </select>
         <div class="icons">
-            <div><img src="./images/dest/loupe.svg" alt="search"></div>
-            <div><img src="./images/dest/scales.svg" alt="scales"></div>
+            <div class="search"><img src="./images/dest/loupe.svg" alt="search"></div>
+            <div class="scales"><img src="./images/dest/scales.svg" alt="scales"></div>
             <div class="icons_heart">
                 <img src="./images/dest/heart.svg" alt="likes">
                 <div class="like"><span class="like__number">10</span></div>
@@ -44,14 +45,11 @@
     </header>
     <main>
         <section class="page1">
-            <div>
-                <img src="./images/dest/PULPIS.png" alt="project">
                 <div class="page1__background"></div>
-            </div>
             
             <article>
                 <div>
-                    <h4>керамика</br>ДЛЯ ВАШИХ ИДЕЙ</h4>
+                    <h4>КЕРАМИКА</br> ДЛЯ ВАШИХ ИДЕЙ</h4>
                 </div>
                 <div class="article__span">
                     <p>Лучшие европейские коллекции</br>керамики и керамогранита</p>
@@ -104,7 +102,7 @@
                     </div>
                     <article>
                         <h2>Сеть фитнес-центров</br> Start&Finish</h2>
-                        <div>
+                        <div class="page2__text">
                             <p>Создали общий стиль для фасада и внутренней отделки</p>
                             <p>Еще несколько коротких предложений о том, что было сделано на проекте</p>
                         </div>
@@ -224,24 +222,24 @@
         <section class="page4">
             <div class="page4__header">
                 <div class="header__text">
-                    <div></div>
-                    <span>СЛЕДИТЕ ЗА НАМИ В INSTAGRAM</span>
-                    <div></div>
+                    <div class="line"></div>
+                    <p class="title">СЛЕДИТЕ ЗА НАМИ В INSTAGRAM</p>
+                    <div class="line"></div>
                 </div>
                 
             </div>
             <div class="page4__main">
                 <div class="page4__works">
                     <div>
-                        <img src="./images/dest/page4-1.png" alt=""></div>
+                        <img class="page4__img" src="./images/dest/page4-1.png" alt=""></div>
                     <div>
-                        <img src="./images/dest/page4-2.png" alt=""></div>
+                        <img class="page4__img" src="./images/dest/page4-2.png" alt=""></div>
                     <div>
-                        <img src="./images/dest/page4-3.png" alt=""></div>
+                        <img class="page4__img" src="./images/dest/page4-3.png" alt=""></div>
                     <div>
-                        <img src="./images/dest/page4-4.png" alt=""></div>
+                        <img class="page4__img" src="./images/dest/page4-4.png" alt=""></div>
                     <div>
-                        <img src="./images/dest/page4-5.png" alt=""></div>
+                        <img class="page4__img" src="./images/dest/page4-5.png" alt=""></div>
                     <div class="works__info">
                         <img src="./images/dest/instagramBlack.svg" alt="">
                         <a href="mailto:@gmail.com" target="_blank">@ceramica</a>
@@ -252,7 +250,7 @@
         </section>
         <section class="page5">
             <div class="page5_container">
-                <img src="./images/dest/page5.png" alt="">
+                <img class="container__img" src="./images/dest/page5.png" alt="">
                 <div class="page5__form">
                     <form>
                         <h2>Возникли вопросы?</h2>
@@ -274,7 +272,7 @@
     <footer>
         <div class="main">
             <div class="main__logo">
-                <img src='./images/dest/LogoWhite.svg' alt="Logo" />
+                <img class="footer__logo" src='./images/dest/LogoWhite.svg' alt="Logo" />
                 <div class="logo__iconNetworks">
                     <img src="./images/dest/facebook.svg" alt="">
                     <img src="./images/dest/instagram.svg" alt="">

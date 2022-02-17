@@ -1,0 +1,168 @@
+@import "./constants.scss";
+
+.page1 {
+  width: 100%;
+  @include adaptive("height", 913, 153);
+  background-image: url("../images/dest/PULPIS.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .page1__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(64, 71, 78, 0.45);
+  }
+  article {
+    h4 {
+      position: absolute;
+      @include adaptive("left", 225, 65);
+      @include adaptive("top", 429, 25);
+      font-style: normal;
+      font-weight: normal;
+      @include adaptive("font-size", 86, 24);
+      line-height: 116%;
+      color: #ffffff;
+    }
+
+    .article__span {
+      position: absolute;
+      @include adaptive("left", 225, 65);
+      @include adaptive("top", 642, 85);
+      font-style: normal;
+      font-weight: normal;
+      @include adaptive("font-size", 30, 10);
+      line-height: 140%;
+      color: #ffffff;
+    }
+  }
+  .iconNetworks {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include adaptive("height", 188, 80);
+    @include adaptive("right", 226, 15);
+    @include adaptive("top", 364, 65);
+    div {
+      img {
+        @include adaptive("width", 30, 15);
+      }
+    }
+  }
+  .page1__choice {
+    width: 100%;
+    @include adaptive("height", 108, 32);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    z-index: 5;
+    .page1__list {
+      width: 59px;
+      height: 16px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 225px;
+      margin-top: 15px;
+      div {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        button {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          &.active {
+            width: 15px;
+            height: 15px;
+            background: transparent;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+    .page1__button {
+      @include adaptive("margin-left", 83, 32);
+      button {
+        width: 26px;
+        height: 47px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        position: relative;
+        div {
+          width: 3px;
+          height: 7px;
+          background: #fff;
+          border-radius: 10px;
+          display: inline-block;
+          position: absolute;
+          top: 11px;
+          left: 11px;
+        }
+      }
+    }
+    .page1__arrows {
+      @include adaptive("width", 143, 60);
+      height: 34px;
+      display: flex;
+      justify-content: space-between;
+      @include adaptive("margin-right", 224, 32);
+      margin-top: 7px;
+      div {
+        width: 2px;
+        height: 34px;
+        background: #fff;
+      }
+      button {
+        height: 34px;
+        background: transparent;
+      }
+      .page1__leftArrow {
+        width: 30px;
+        height: 11px;
+      }
+      .page1__rightArrow {
+        width: 30px;
+        height: 11px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .page1 article h4 {
+    text-align: center;
+  }
+  .page1 article .article__span {
+    text-align: center;
+    @include adaptive("left", 350, 100);
+  }
+  .page1 .iconNetworks {
+    display: none;
+  }
+  .page1 .page1__choice {
+    justify-content: center;
+  }
+  .page1 .page1__choice .page1__list {
+    display: none;
+  }
+  .page1 .page1__choice .page1__button {
+    display: none;
+  }
+  .page1 .page1__choice .page1__arrows {
+    margin-left: 45px;
+    .page1__leftArrow,
+    .page1__rightArrow {
+      width: 20px;
+    }
+    div {
+      height: 24px;
+    }
+  }
+}

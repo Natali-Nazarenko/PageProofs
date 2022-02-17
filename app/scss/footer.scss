@@ -1,0 +1,413 @@
+@import "./constants.scss";
+
+footer {
+  // height: 420px;
+  @include adaptive("height", 420, 350);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  background: #6a737a;
+  .main {
+    display: flex;
+    justify-content: space-between;
+    // margin: 80px 225px 0;
+    @include adaptive("margin-top", 80, 10);
+    @include adaptive("margin-left", 225, 10);
+    @include adaptive-mini("margin-right", 225, 10);
+    color: #fff;
+    position: relative;
+    // .telefone {
+    //   font-size: 14px;
+    //   line-height: 120%;
+    // }
+    .main__logo {
+      .logo__iconNetworks {
+        width: 132px;
+        @include adaptive("width", 132, 80);
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 37px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        .iconNetworks__youtube {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .main__infoLinks {
+      width: 868px;
+      @include adaptive("width", 868, 100);
+      height: 223px;
+      // @include adaptive("width", 223, 400);
+      // margin-left: 119px;
+      // margin-right: 89px;
+      @include adaptive("margin-left", 119, 5);
+      @include adaptive("margin-right", 89, 30);
+      display: flex;
+      .telefone {
+        margin-bottom: 10px;
+        // font-size: 14px;
+        @include adaptive("font-size", 14, 6);
+        line-height: 120%;
+      }
+      .company-info {
+        width: 172px;
+        height: 219px;
+        @include adaptive("width", 172, 50);
+        @include adaptive("height", 219, 160);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+          width: 172px;
+          height: 25px;
+          @extend %span-footer;
+          // margin-bottom: 14.3px;
+          font-style: normal;
+          font-weight: normal;
+          // font-size: 18px;
+          // line-height: 140%;
+        }
+        .company-info__list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+        }
+        a {
+          text-decoration: none;
+          @extend %font-link;
+          // font-style: normal;
+          // font-weight: normal;
+          // font-size: 14px;
+          // line-height: 120%;
+          color: #fff;
+          margin-bottom: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .brands {
+        width: 117px;
+        @include adaptive("width", 117, 50);
+        height: 84px;
+        margin-left: 28px;
+        @include adaptive("margin-left", 28, 5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .brands__title {
+          @extend %span-footer;
+          // margin-bottom: 14.3px;
+          // font-size: 18px;
+          // line-height: 140%;
+        }
+        .brands__list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+        }
+        span {
+          width: 150px;
+          margin-bottom: 9px;
+          @extend %font-link;
+          // font-style: normal;
+          // font-weight: normal;
+          // font-size: 14px;
+          // line-height: 120%;
+        }
+      }
+      .hr-department {
+        width: 209px;
+        @include adaptive("width", 209, 50);
+        height: 223px;
+        @include adaptive("height", 223, 160);
+        margin-left: 83px;
+        @include adaptive("margin-left", 83, 5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          @extend %font-link;
+          // font-style: normal;
+          // font-weight: normal;
+          // font-size: 14px;
+          // line-height: 120%;
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .first-department {
+          height: 130px;
+          display: flex;
+          flex-direction: column;
+          .first-department__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+          }
+          span {
+            @extend %span-footer;
+            // margin-bottom: 14.3px;
+            // font-size: 18px;
+            // line-height: 140%;
+            letter-spacing: 0.2px;
+          }
+          a {
+            margin-bottom: 9px;
+          }
+        }
+        .second-department {
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          span {
+            @extend %span-footer;
+            // margin-bottom: 14.3px;
+            // font-size: 18px;
+            // line-height: 140%;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+      .admin-department {
+        // width: 209px;
+        @include adaptive("width", 209, 70);
+        height: 223px;
+        @include adaptive("height", 209, 160);
+        margin-left: 51px;
+        @include adaptive("margin-left", 51, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+          margin-bottom: 10px;
+          text-decoration: none;
+          @extend %font-link;
+          // font-style: normal;
+          // font-weight: normal;
+          // font-size: 14px;
+          // line-height: 120%;
+          color: #fff;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .administration {
+          height: 130px;
+          display: flex;
+          flex-direction: column;
+          .administration__list {
+            display: flex;
+            flex-direction: column;
+            margin-left: -1px;
+          }
+          span {
+            @extend %span-footer;
+            // margin-bottom: 14.3px;
+            // font-size: 18px;
+            // line-height: 140%;
+          }
+        }
+        .management {
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          a {
+            margin-left: -1px;
+          }
+          span {
+            @extend %span-footer;
+            // margin-bottom: 14.3px;
+            // font-size: 18px;
+            // line-height: 140%;
+            letter-spacing: 0.2px;
+            margin-left: -1px;
+          }
+        }
+      }
+    }
+    .main__button {
+      button {
+        // width: 262px;
+        // height: 54px;
+        @include adaptive("width", 262, 80);
+        @include adaptive("height", 54, 34);
+        font-family: "GothamPro", Courier, monospace;
+        font-style: normal;
+        font-weight: normal;
+        // font-size: 14px;
+        @include adaptive("font-size", 14, 6);
+        line-height: 121.2%;
+        letter-spacing: 0.05em;
+        color: #fff;
+      }
+      .view-catalog {
+        background: #6b97bb;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+        border: 1px solid #6b97bb;
+        span {
+          margin-left: 4px;
+        }
+        img {
+          width: 26px;
+          margin-right: 2px;
+          transform: rotate(180deg);
+        }
+      }
+      .download-catalogs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #6a737a;
+        border: 1px solid #fff;
+        span {
+          margin-left: 5px;
+        }
+        img {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 38px;
+    // margin: 0 225px;
+    @include adaptive("margin-left", 225, 20);
+    @include adaptive("margin-right", 225, 20);
+    display: flex;
+    justify-content: space-between;
+    .footer__copyright {
+      width: 143px;
+      height: 17px;
+      font-size: 14px;
+      line-height: 120%;
+      color: #fff;
+    }
+    .footer__buttons {
+      width: 99px;
+      margin-left: 106px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .buttons__line {
+        width: 1px;
+        height: 10px;
+        margin-top: 3px;
+        background-color: #fff;
+      }
+      .ua,
+      .en {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 121.2%;
+        letter-spacing: 0.06em;
+        opacity: 0.3;
+        background: none;
+        color: #fff;
+      }
+      .ru {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 121.2%;
+        letter-spacing: 0.06em;
+        background: none;
+        color: #fff;
+      }
+    }
+    .footer__text {
+      width: 247px;
+      height: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        width: 192px;
+        height: 16px;
+        margin-top: 3px;
+        font-family: Gilroy;
+        font-size: 11.9px;
+        line-height: 133%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        color: #ffffff;
+        mix-blend-mode: normal;
+      }
+      a {
+        width: 51px;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  footer .footer .footer__buttons {
+    display: none;
+  }
+  footer .main .main__logo .footer__logo {
+    position: absolute;
+    visibility: hidden;
+  }
+  footer .main .main__logo .logo__iconNetworks {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+  }
+  footer .main .main__infoLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include adaptive("width", 1000, 300);
+    @include adaptive("height", 350, 100);
+    @include adaptive("margin-right", 89, 5);
+  }
+  footer .main {
+    @include adaptive("height", 350, 100);
+    @include adaptive("margin-left", 50, 10);
+    @include adaptive-mini("margin-right", 50, 10);
+  }
+  footer .main .main__infoLinks .hr-department {
+    @include adaptive("margin-left", 53, 5);
+  }
+}
+
+@media (max-width: 575px) {
+  footer .footer .footer__text {
+    flex-direction: column;
+  }
+  footer .footer .footer__copyright {
+    width: 120px;
+  }
+  footer .main .main__button {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 230px;
+    right: 10px;
+    .view-catalog {
+      margin-right: 5px;
+    }
+  }
+}

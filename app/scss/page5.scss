@@ -1,0 +1,176 @@
+@import "./constants.scss";
+
+.page5 {
+  height: 1130px;
+  @include adaptive("height", 1130, 400);
+  display: flex;
+  align-items: center;
+  position: relative;
+  .page5_container {
+    margin-left: 225px;
+    @include adaptive("margin-left", 225, 5);
+    position: relative;
+    .container__img {
+      @include adaptive("width", 862, 250);
+      @include adaptive("height", 890, 350);
+    }
+    .page5__form {
+      width: 736px;
+      height: 705px;
+      @include adaptive("width", 736, 300);
+      @include adaptive("height", 705, 350);
+      position: absolute;
+      top: 96px;
+      @include adaptive("top", 96, 10);
+      // left: 668px;
+      @include adaptive("left", 668, 100);
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        // width: 470px;
+        // height: 550px;
+        @include adaptive("width", 470, 280);
+        @include adaptive("height", 550, 350);
+
+        margin-bottom: 51px;
+        @include adaptive("margin-bottom", 51, 10);
+        margin-right: 44px;
+        @include adaptive("margin-right", 44, 0);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          // width: 453px;
+          // height: 57px;
+          position: absolute;
+          top: 22px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 44px;
+          @include adaptive("font-size", 44, 18);
+          line-height: 130%;
+          text-align: center;
+          color: #40474e;
+        }
+        p {
+          // width: 423px;
+          // height: 50px;
+          position: absolute;
+          top: 98px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          @include adaptive("font-size", 18, 10);
+          line-height: 140%;
+          color: #40474e;
+        }
+        input {
+          // width: 470px;
+          @include adaptive("width", 470, 250);
+          height: 51px;
+          // padding-left: 20px;
+          @include adaptive("padding-left", 20, 5);
+          padding-bottom: 5px;
+          border: 1px solid #cfdae3;
+          margin-bottom: 18px;
+          font-family: "GothamPro", Courier, monospace;
+          font-style: normal;
+          font-weight: 300;
+          // font-size: 16px;
+          @include adaptive("font-size", 16, 8);
+          line-height: 140%;
+          color: #98a4ae;
+        }
+        .input__name {
+          margin-top: 178px;
+          @include adaptive("margin-top", 178, 140);
+          height: 54px;
+        }
+        .form__massage {
+          // width: 470px;
+          @include adaptive("width", 470, 250);
+          height: 105px;
+          padding-top: 11px;
+          @include adaptive("padding-top", 11, 5);
+          @include adaptive("padding-left", 21, 5);
+          margin-bottom: 14px;
+          resize: none;
+          border: 1px solid #cfdae3;
+          font-family: "Gilroy";
+          font-style: normal;
+          font-weight: 300;
+          // font-size: 16px;
+          @include adaptive("font-size", 16, 8);
+          line-height: 140%;
+          letter-spacing: 0.5px;
+          color: #98a4ae;
+        }
+        button {
+          // width: 470px;
+          @include adaptive("width", 470, 90);
+          height: 57px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #6b97bb;
+          span {
+            // width: 97px;
+            @include adaptive("width", 97, 70);
+            height: 17px;
+            // margin-left: 31px;
+            @include adaptive("margin-left", 31, 15);
+            padding-top: 2px;
+            font-style: normal;
+            font-weight: normal;
+            // font-size: 14px;
+            @include adaptive("font-size", 14, 8);
+            line-height: 121.2%;
+            letter-spacing: 1.6px;
+            color: #fff;
+          }
+          img {
+            margin-right: 30px;
+            width: 24px;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .form__frame {
+    width: 689px;
+    height: 689px;
+    @include adaptive("width", 689, 289);
+    @include adaptive("height", 689, 289);
+    position: absolute;
+    top: 228px;
+    left: 924px;
+    border: 1px solid #cfdae3;
+    transform: rotate(15deg);
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page5 .form__frame {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .page5 .page5_container .container__img {
+    visibility: hidden;
+  }
+  .page5 .page5_container .page5__form {
+    top: 10px;
+    left: 10px;
+  }
+  .page5 .page5_container .page5__form form button img {
+    visibility: hidden;
+  }
+  .page5 .page5_container .page5__form form button {
+    margin-left: 100px;
+  }
+}

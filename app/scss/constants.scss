@@ -1,0 +1,44 @@
+$maxWidth: 1920;
+
+@mixin adaptive($property, $maxSize, $minSize) {
+  $addSize: $maxSize - $minSize;
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320})
+  );
+}
+
+@mixin adaptive-mini($property, $maxSize, $minSize) {
+  $addSize: $maxSize - $minSize;
+  #{$property}: calc(
+    #{$minSize + px} + #{$addSize} * ((100vw - 576px) / #{$maxWidth - 576})
+  );
+}
+
+%font-button {
+  font-family: "GothamPro", Courier, monospace;
+  font-style: normal;
+  font-weight: normal;
+  @include adaptive("font-size", 14, 6);
+  line-height: 115.7%;
+}
+
+%font-span {
+  font-style: normal;
+  font-weight: normal;
+  @include adaptive("font-size", 14, 6);
+  line-height: 130%;
+}
+
+%font-link {
+  font-style: normal;
+  font-weight: normal;
+  @include adaptive("font-size", 14, 6);
+  line-height: 120%;
+}
+
+%span-footer {
+  margin-bottom: 14.3px;
+  // font-size: 18px;
+  @include adaptive("font-size", 18, 10);
+  line-height: 140%;
+}
